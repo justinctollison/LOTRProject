@@ -1,2 +1,2 @@
-# NHLGoaliesProject
-React project to pull NHL data from the API and display teams plus goalie stats.
+# LotrProject
+React project to pull LOTR data from https://the-one-api.dev/documentation and to display characters.
