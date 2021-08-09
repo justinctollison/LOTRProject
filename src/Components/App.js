@@ -13,6 +13,11 @@ import About from "./About"
 //placeholder pictures based on race?
 //NEED MORE IDEAS
 
+// You must make a single page application (only one index.html file) using create-react-app [X]
+// Your app should use multiple components in a way that keeps your code well organized [X]
+// There should be multiple client-side routes using react-router (Links to an external site.) [X]
+// You can use json-server to create a RESTful API for your backend, or incorporate data from an external API [X]
+
 function App(){
     //set state for arrays of data after fetching API
     const [characterData, setCharacterData] = useState([])
@@ -20,6 +25,7 @@ function App(){
 
     //set search state for when typing in the search bar
     const [search, setSearch] = useState("")
+    const [category, setCategory] = useState("All");
 
     useEffect(() => {
         //fetch character metadata from API
@@ -68,7 +74,7 @@ function App(){
                 </Switch>
                 <Switch>
                     <Route exact path="/Characters">
-                        <CharacterContainer characterData={characterData} search={search} setSearch={setSearch}/>
+                        <CharacterContainer characterData={characterData} search={search} setSearch={setSearch} category={category} setCategory={setCategory}/>
                     </Route>
                 </Switch>
                 <Switch>
