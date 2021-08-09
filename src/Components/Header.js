@@ -4,11 +4,8 @@ function Header(){
     return (
         <header>
             <h1>
-                Lord of the Rings Characters List
+                Lord of the Rings
             </h1>
-            <h2>
-                (Every character from both novels and films)
-            </h2>
         </header>
     )
 }
