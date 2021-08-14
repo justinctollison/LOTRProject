@@ -4,7 +4,16 @@ import Character from "./Character"
 function CharacterList( {characterData} ){
 
     const displayCharacters = characterData.map((character) => {
-        return <Character key={character._id} name={character.name} gender={character.gender} race={character.race} realm={character.realm} link={character.wikiUrl}   />
+        return <Character 
+        key={character._id} 
+        name={character.name} 
+        gender={character.gender} 
+        race={character.race} 
+        realm={character.realm} 
+        link={character.wikiUrl}
+        birth={character.birth}
+        death={character.death}
+        />
     })
 
     return (
