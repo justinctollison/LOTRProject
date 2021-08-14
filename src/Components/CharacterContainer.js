@@ -30,7 +30,7 @@ function CharacterContainer( {characterData, search, setSearch, category, setCat
 
     return (
         <div>
-            <h3>Currently Selected Race: {category}</h3>
+            <h3 className="font">Currently Selected Race: {category}</h3>
             <header>{raceButtons}</header>
             <Search search={search} setSearch={setSearch}/>
             <CharacterList characterData={filterCharacter}/>

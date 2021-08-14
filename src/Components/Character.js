@@ -7,7 +7,7 @@ function Character( {name, gender, race, realm, link} ){
             <h3>Gender: {gender}</h3>
             <h3 className="label">Race: {race}</h3>
             <h3>Realm: {realm}</h3>
-            <a href={link}><h4>Wiki Link</h4></a>
+            <a href={link} target="_blank"><h4>Wiki Link</h4></a>
         </li>
     )
 }

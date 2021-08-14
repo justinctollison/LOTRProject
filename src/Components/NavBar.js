@@ -10,7 +10,7 @@ function NavBar(){
       };
 
     return (
-        <div className="navbar">
+        <div className="font-link">
             <NavLink
                 to="/"
                 exact
