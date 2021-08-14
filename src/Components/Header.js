@@ -1,6 +1,5 @@
 import React from "react"
 import TheOneRing from "./TheOneRing.jpg"
-import MiddleEarthMap from "./MiddleEarthMap.jpeg"
 
 function Header(){
     return (
