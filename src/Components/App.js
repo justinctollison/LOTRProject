@@ -12,6 +12,7 @@ import About from "./About"
 //better styling
 //placeholder pictures based on race?
 //NEED MORE IDEAS
+//Change fonts, background image, links
 
 // You must make a single page application (only one index.html file) using create-react-app [X]
 // Your app should use multiple components in a way that keeps your code well organized [X]
@@ -68,17 +69,17 @@ function App(){
                     </Route>
                 </Switch>
                 <Switch>
-                    <Route exact path="/About">
+                    <Route exact path="/about">
                         <About />
                     </Route>
                 </Switch>
                 <Switch>
-                    <Route exact path="/Characters">
+                    <Route exact path="/characters">
                         <CharacterContainer characterData={characterData} search={search} setSearch={setSearch} category={category} setCategory={setCategory}/>
                     </Route>
                 </Switch>
                 <Switch>
-                    <Route exact path="/Movies">
+                    <Route exact path="/movies">
                         <MovieContainer movieData={movieData} search={search} setSearch={setSearch} />
                     </Route>
                 </Switch>

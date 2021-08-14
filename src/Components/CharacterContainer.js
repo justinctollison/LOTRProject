@@ -9,7 +9,7 @@ function CharacterContainer( {characterData, search, setSearch, category, setCat
         && (category === "All" || character.race == category)
     })
 
-    const races = ["All", "Human", "Elf", "Hobbit", "Orc", "Dwarf", "Maiar"]
+    const races = ["All", "Human", "Elf", "Hobbit", "Orc", "Dwarf", "Maiar", "Men"]
 
     const raceButtons = races.map((race) => {
         const raceName = race === category ? "selected" : null;
@@ -24,10 +24,13 @@ function CharacterContainer( {characterData, search, setSearch, category, setCat
         )
     })
 
+    const currentRace = category
+
     console.log(category)
 
     return (
         <div>
+            <h3>Currently Selected Race: {category}</h3>
             <header>{raceButtons}</header>
             <Search search={search} setSearch={setSearch}/>
             <CharacterList characterData={filterCharacter}/>

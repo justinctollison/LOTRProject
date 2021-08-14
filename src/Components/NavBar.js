@@ -10,7 +10,7 @@ function NavBar(){
       };
 
     return (
-        <div>
+        <div className="navbar">
             <NavLink
                 to="/"
                 exact
@@ -21,7 +21,7 @@ function NavBar(){
                 Home
             </NavLink>
             <NavLink
-                to="About"
+                to="about"
                 exact
                 style={linkStyles}
                 activeStyle={{background:"green",
@@ -30,7 +30,7 @@ function NavBar(){
                 About
             </NavLink>
             <NavLink
-                to="Characters"
+                to="characters"
                 exact
                 style={linkStyles}
                 activeStyle={{background:"green",
@@ -39,7 +39,7 @@ function NavBar(){
                 Characters
             </NavLink>
             <NavLink
-                to="Movies"
+                to="movies"
                 exact
                 style={linkStyles}
                 activeStyle={{background:"green",
